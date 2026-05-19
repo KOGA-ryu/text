@@ -9,11 +9,12 @@ local UI integration to the user and Spark.
 ## Workflow
 
 1. Read `BUILD_QUEUE.md`.
-2. Pick one `READY` item.
-3. Create a branch named `codex/<slice-name>`.
-4. Edit only the allowed paths for that slice.
-5. Run proof.
-6. Commit and push.
+2. Verify the cloud remote with `scripts/cloud_setup_remote.sh`.
+3. Pick one `READY` item.
+4. Create a branch named `codex/<slice-name>`.
+5. Edit only the allowed paths for that slice.
+6. Run proof.
+7. Commit and push.
 
 ## Build Queue
 

@@ -31,6 +31,18 @@ Then read:
 4. `docs/ownership_boundaries.md`
 5. `docs/slice_template.md`
 
+## Cloud Remote Setup
+
+This repo must be connected to `https://github.com/KOGA-ryu/text.git` before a
+Cloud Dex branch can be pushed. If `git remote -v` has no `origin`, or points to
+the wrong repo, run:
+
+```bash
+scripts/cloud_setup_remote.sh
+```
+
+This script may update `.git/config`, but it must not edit tracked files.
+
 ## Work Rules
 
 Pick exactly one `READY` queue item from `BUILD_QUEUE.md`.
