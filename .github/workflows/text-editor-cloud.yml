@@ -1,0 +1,17 @@
+name: Text Editor Cloud Proof
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - "codex/**"
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Cloud proof
+        run: scripts/cloud_proof.sh
