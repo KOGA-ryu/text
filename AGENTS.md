@@ -35,6 +35,15 @@ Then read:
 
 Pick exactly one `READY` queue item from `BUILD_QUEUE.md`.
 
+Setup and bootstrap commands must be read-only against tracked files. They may
+install tools or print diagnostics, but must not format code, edit docs, update
+the queue, generate crates, or create tracked files before the assigned task
+starts.
+
+If `git status --short` is not empty before you begin the assigned task, stop
+and report the dirty paths instead of applying a patch. Do not work around a
+dirty cloud workspace by weakening the task.
+
 Allowed default writes:
 
 - `docs/**`
