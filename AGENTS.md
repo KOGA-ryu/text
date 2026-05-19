@@ -26,13 +26,14 @@ git status --short
 Then read:
 
 1. `README.md`
-2. `docs/cloud_build_queue.md`
-3. `docs/ownership_boundaries.md`
-4. `docs/slice_template.md`
+2. `BUILD_QUEUE.md`
+3. `docs/cloud_build_queue.md`
+4. `docs/ownership_boundaries.md`
+5. `docs/slice_template.md`
 
 ## Work Rules
 
-Pick exactly one `READY` queue item from `docs/cloud_build_queue.md`.
+Pick exactly one `READY` queue item from `BUILD_QUEUE.md`.
 
 Allowed default writes:
 
