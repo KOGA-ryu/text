@@ -1,0 +1,11 @@
+[package]
+name = "text_editor_plain"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Deterministic plain UTF-8 text helpers for text editor feature slices"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
